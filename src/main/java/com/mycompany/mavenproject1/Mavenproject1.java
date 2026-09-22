@@ -15,7 +15,7 @@ public class Mavenproject1 {
     
 
     public static void main(String[] args) {
-        System.out.print("Digite Cantidad de Usuarios: ");
+        System.out.print("Digite la cantidad de usuarios: ");
         tam = sc.nextInt();
  
         nom = new String[tam];
@@ -46,11 +46,11 @@ public class Mavenproject1 {
                 break;
  
             case 3:
-                System.out.println("Programa finalizado....");
+                System.out.println("Finalizacion del programa....");
                 break;
  
             default:
-                System.out.println("Opcion incorrecta");
+                System.out.println("Opcion invalidad");
                 menu();
         }
     }
@@ -62,16 +62,16 @@ public class Mavenproject1 {
         for (int i = 0; i < tam; i++) {
             System.out.println("\nEmpleado " + i);
  
-            System.out.print("Digite Nombre: ");
+            System.out.print("Digite su Nombre: ");
             nom[i] = sc.next();
  
-            System.out.print("Digite Apellido: ");
+            System.out.print("Digite su Apellido: ");
             ape[i] = sc.next();
  
-            System.out.print("Digite Salario Mensual: ");
+            System.out.print("Digite su Salario Mensual: ");
             sal[i] = sc.nextDouble();
  
-            System.out.print("Digite Dias Trabajados: ");
+            System.out.print("Digite sus Dias Trabajados: ");
             dt[i] = sc.nextInt();
  
             tp[i] = (sal[i] / 30) * dt[i];
@@ -109,7 +109,7 @@ public class Mavenproject1 {
  
             case 2:
  
-                System.out.print("Digite la posicion a consultar: ");
+                System.out.print("Digite la posicion que desea consultar: ");
                 int pos = sc.nextInt();
  
                 if (pos >= 0 && pos < tam) {
@@ -141,7 +141,7 @@ public class Mavenproject1 {
  
             default:
  
-                System.out.println("Opcion incorrecta.");
+                System.out.println("Opcion invalida.");
                 consultar();
         }
     }
@@ -207,7 +207,7 @@ public class Mavenproject1 {
  
             default:
  
-                System.out.println("Opcion incorrecta.");
+                System.out.println("Opcion invalida.");
         }
  
         consultar();
